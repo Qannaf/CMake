@@ -1,12 +1,17 @@
 # C++
-## CMake
-# Cmake & C++ cours complet
+## Cmake & C++ cours complet
 --------------------
-
 <p align="center"><img width="420" height="210" src="images/cmake.jpg"></p>
 
 ## Table des matières
-1. [Hello world](#1)
+1. [Hello world Beta](#1)
+1. [Hello world](#2)
+1. [Hello world with library static](#3)
+1. [Hello world with add_subdirectory](#4)
+1. [Hello World with add_subdirectory _recommendation_](#5)
+1. [Hello World with bibliothèque d’en-têtes pure _glm_](#6)
+1. [Hello World with une bibliothèque tierce - introduite en tant que sous-modules](#7)
+
 
 
 <a name="1"></a>
@@ -21,13 +26,18 @@
 ```C
 add_executable(a.out main.cpp hello.cpp)
 ```
+
+<a name="2"></a>
 2. Hello world 
 ```C
 cmake_minimum_required(VERSION 3.12)
 project(hellocmake LANGUAGES CXX)
 add_executable(a.out main.cpp hello.cpp)
 ```
+
+<a name="3"></a>
 3. Hello world with library static
+
 ```C
 cmake_minimum_required(VERSION 3.12)
 project(hellocmake LANGUAGES CXX)
@@ -37,13 +47,13 @@ add_executable(a.out main.cpp)
 target_link_libraries(a.out PUBLIC hellolib)
 ```
 
+<a name="4"></a>
 4. Hello world with add_subdirectory
+
 ```C
 cmake_minimum_required(VERSION 3.12)
 project(hellocmake LANGUAGES CXX)
-
 add_subdirectory(hellolib)
-
 add_executable(a.out main.cpp)
 target_link_libraries(a.out PUBLIC hellolib)
 ```
@@ -51,7 +61,9 @@ and add this in the subdirectory CMakeLists.txt
 >add_library(hellolib STATIC hello.cpp)<br>
 ! Attention  we need to add  #include"subdirectory/file.h"
 
+<a name="5"></a>
 5. Hello World with add_subdirectory _recommendation_
+
 ```C
 cmake_minimum_required(VERSION 3.12)
 project(hellocmake LANGUAGES CXX)
@@ -66,7 +78,10 @@ and add this in the subdirectory CMakeLists.txt
 ><br>target_include_directories(hellolib PUBLIC .)
 <br>! Attention  we need to add  #include<file.h>
 
+
+<a name="6"></a>
 6. Hello World with bibliothèque d’en-têtes pure _glm_
+
 ```C
 cmake_minimum_required(VERSION 3.12)
 project(hellocmake LANGUAGES CXX)
@@ -75,8 +90,9 @@ add_executable(a.out main.cpp)
 target_include_directories(a.out PUBLIC glm/include)
 
 ```
-
+<a name="7"></a>
 7. Hello World with une bibliothèque tierce - introduite en tant que sous-modules
+
 ```C
 cmake_minimum_required(VERSION 3.12)
 project(hellocmake LANGUAGES CXX)
@@ -87,12 +103,5 @@ add_executable(a.out main.cpp)
 target_link_libraries(a.out PUBLIC fmt)
 ```
 
-7. Hello World with 
-```C
-
-```
-
-8s. Hello World with 
-```C
 
 ```
