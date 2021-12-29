@@ -103,7 +103,7 @@ add_executable(a.out main.cpp)
 target_link_libraries(a.out PUBLIC fmt)
 ```
 <a name="8"></a>
-8. Hello World with variables and static library (#8)
+8. Hello World with variables and static library 
 ![alt text](images/variables.png?raw=true "sortie de code")
 * CMakeLists.txt
     ```CPP
@@ -141,8 +141,8 @@ target_link_libraries(a.out PUBLIC fmt)
     ```
 
     <a name="9"></a>
-9. Hello World with variables and shared library (#9)
-Pour ajouter shared library, on fais comme on a fais pour le static library mais dans le dossier de la library dans CMakeLists.txt 
+9. Hello World with variables and shared library 
+<p>Pour ajouter shared library, on fais comme on a fais pour le static library mais dans le dossier de la library dans CMakeLists.txt 
 on remplace 
 >add_library(${LIBRARY_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
 par
