@@ -11,7 +11,7 @@
 1. [Hello World with add_subdirectory _recommendation_](#5)
 1. [Hello World with bibliothèque d’en-têtes pure _glm_](#6)
 1. [Hello World with une bibliothèque tierce - introduite en tant que sous-modules](#7)
-
+1. [Hello World with variables](#8)
 
 
 <a name="1"></a>
@@ -102,6 +102,40 @@ add_subdirectory(fmt)
 add_executable(a.out main.cpp)
 target_link_libraries(a.out PUBLIC fmt)
 ```
+<a name="8"></a>
+8. Hello World with variables (#8)
+![alt text](images/variables.png?raw=true "sortie de code")
+* CMakeLists.txt
+    ```CPP
+    cmake_minimum_required(VERSION 3.12)
+    project(hellocmake LANGUAGES CXX)
 
+    add_subdirectory(hellolib)
 
-```
+    add_subdirectory(helloexe)
+    ```
+
+    * helloexe CMakeLists.txt
+    ```CPP
+    set(EXE_NAME a.out)
+
+    set(SRC_DIR ./src)
+    file(GLOB SRC_FILES ${SRC_DIR}/*)
+
+    add_executable(${EXE_NAME} ${SRC_FILES})
+    target_link_libraries(${EXE_NAME} PUBLIC hellolib)
+    ```
+
+    * hellolib CMakeLists.txt
+    ```CPP
+    set(LIBRARY_NAME hellolib)
+
+    set(SRC_DIR ./src)
+    set(INCLUDE_DIR ./include)
+
+    file(GLOB SRC_FILES ${SRC_DIR}/*)
+    file(GLOB_RECURSE INCLUDE_FILES ${INCLUDE_DIR}/*)
+
+    add_library(${LIBRARY_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
+    target_include_directories(${LIBRARY_NAME} PUBLIC include/.)
+    ```
