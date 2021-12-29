@@ -1,0 +1,8 @@
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/hellolib/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/hellolib/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/hellolib/CMakeFiles/hellolib.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/helloexe/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/helloexe/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/helloexe/CMakeFiles/a.out.dir

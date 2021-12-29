@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/a.out.dir/src/main.cpp.o  -o a.out  -Wl,-rpath,"/mnt/c/Users/alsahmiq/Desktop/mes documents/course/Cmake/16/build/hellolib" ../hellolib/libhellolib.so 

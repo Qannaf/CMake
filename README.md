@@ -11,8 +11,8 @@
 1. [Hello World with add_subdirectory _recommendation_](#5)
 1. [Hello World with bibliothèque d’en-têtes pure _glm_](#6)
 1. [Hello World with une bibliothèque tierce - introduite en tant que sous-modules](#7)
-1. [Hello World with variables](#8)
-
+1. [Hello World with variables and static library ](#8)
+1. [Hello World with variables and shared library ](#9)
 
 <a name="1"></a>
 1. Hello world Beta
@@ -103,7 +103,7 @@ add_executable(a.out main.cpp)
 target_link_libraries(a.out PUBLIC fmt)
 ```
 <a name="8"></a>
-8. Hello World with variables (#8)
+8. Hello World with variables and static library (#8)
 ![alt text](images/variables.png?raw=true "sortie de code")
 * CMakeLists.txt
     ```CPP
@@ -139,3 +139,13 @@ target_link_libraries(a.out PUBLIC fmt)
     add_library(${LIBRARY_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
     target_include_directories(${LIBRARY_NAME} PUBLIC include/.)
     ```
+
+    <a name="9"></a>
+9. Hello World with variables and shared library (#9)
+Pour ajouter shared library, on fais comme on a fais pour le static library mais dans le dossier de la library dans CMakeLists.txt 
+on remplace 
+>add_library(${LIBRARY_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
+par
+>add_library(${LIBRARY_NAME} SHARED ${SRC_FILES} ${INCLUDE_FILES})
+>target_include_directories(${LIBRARY_NAME} PUBLIC ${INCLUDE_DIR})
+>target_compile_definitions(${LIBRARY_NAME} PRIVATE DLL_EXPORT) 
