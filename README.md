@@ -144,8 +144,11 @@ target_link_libraries(a.out PUBLIC fmt)
 9. Hello World with variables and shared library 
 <p>Pour ajouter shared library, on fais comme on a fais pour le static library mais dans le dossier de la library dans CMakeLists.txt 
 on remplace 
+
 >add_library(${LIBRARY_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
+
 par
+
 >add_library(${LIBRARY_NAME} SHARED ${SRC_FILES} ${INCLUDE_FILES})
 >target_include_directories(${LIBRARY_NAME} PUBLIC ${INCLUDE_DIR})
 >target_compile_definitions(${LIBRARY_NAME} PRIVATE DLL_EXPORT) 
