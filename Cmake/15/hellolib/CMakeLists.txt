@@ -7,4 +7,4 @@ file(GLOB SRC_FILES ${SRC_DIR}/*)
 file(GLOB_RECURSE INCLUDE_FILES ${INCLUDE_DIR}/*)
 
 add_library(${LIBRARY_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
-target_include_directories(${LIBRARY_NAME} PUBLIC include/.)
+target_include_directories(${LIBRARY_NAME} PUBLIC ${INCLUDE_DIR})
