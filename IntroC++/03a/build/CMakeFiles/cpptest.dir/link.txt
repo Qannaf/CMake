@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/cpptest.dir/g.cpp.o  -o cpptest 

@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+struct Pig {
+    std::string m_name;
+    int m_weight{0};
+
+    Pig() = default;
+
+    Pig(const std::string& name, const int& weight): m_name(name), m_weight(weight)
+    {}
+};
+
+void show(const Pig& pig) {
+    std::cout << "name: " << pig.m_name << std::endl;
+    std::cout << "weight: " << pig.m_weight << std::endl;
+}
+
+int main() {
+    Pig pig;
+
+    show(pig);
+    return 0;
+}
+
+

@@ -1,0 +1,3 @@
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build/CMakeFiles/cpptest.dir
