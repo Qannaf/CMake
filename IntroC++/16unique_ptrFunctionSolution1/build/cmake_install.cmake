@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16
+# Install script for directory: /mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

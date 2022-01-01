@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/03a"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/03a/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build/CMakeFiles" "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/03a/build/CMakeFiles" "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/03a/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/02/03a/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/03a/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ cpptest/fast:
 	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/build
 .PHONY : cpptest/fast
 
-g.o: g.cpp.o
+7.o: 7.cpp.o
 
-.PHONY : g.o
+.PHONY : 7.o
 
 # target to build an object file
-g.cpp.o:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/g.cpp.o
-.PHONY : g.cpp.o
+7.cpp.o:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/7.cpp.o
+.PHONY : 7.cpp.o
 
-g.i: g.cpp.i
+7.i: 7.cpp.i
 
-.PHONY : g.i
+.PHONY : 7.i
 
 # target to preprocess a source file
-g.cpp.i:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/g.cpp.i
-.PHONY : g.cpp.i
+7.cpp.i:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/7.cpp.i
+.PHONY : 7.cpp.i
 
-g.s: g.cpp.s
+7.s: 7.cpp.s
 
-.PHONY : g.s
+.PHONY : 7.s
 
 # target to generate assembly for a file
-g.cpp.s:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/g.cpp.s
-.PHONY : g.cpp.s
+7.cpp.s:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/7.cpp.s
+.PHONY : 7.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cpptest"
-	@echo "... g.o"
-	@echo "... g.i"
-	@echo "... g.s"
+	@echo "... 7.o"
+	@echo "... 7.i"
+	@echo "... 7.s"
 .PHONY : help
 
 

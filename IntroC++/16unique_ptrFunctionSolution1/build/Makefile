@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16/build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16/build/CMakeFiles" "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1/build/CMakeFiles" "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/alsahmiq/Desktop/mes documents/course/IntroC++/16/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/qanna/OneDrive/Bureau/mes activités/CMake/IntroC++/16unique_ptrFunctionSolution1/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

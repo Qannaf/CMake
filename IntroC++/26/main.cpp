@@ -5,11 +5,7 @@ struct Pig {
     std::string m_name;
     int m_weight;
 
-    Pig(std::string name, int weight)
-        : m_name(name)
-        , m_weight(weight)
-    {}
-
+    Pig(std::string name, int weight): m_name(name), m_weight(weight){}
     explicit Pig(Pig const &other) = default;
 };
 
@@ -19,8 +15,9 @@ void show(Pig pig) {
 }
 
 int main() {
-    Pig pig{"佩奇", 80};
-    show(pig);       // 编译错误
-    show(Pig{pig});  // 编译通过
+    Pig pig{"Cochon", 80};
+    show(pig);       // erreur
+    show(Pig{pig});  // Ok
     return 0;
 }
+

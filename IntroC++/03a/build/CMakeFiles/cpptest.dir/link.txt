@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/cpptest.dir/g.cpp.o  -o cpptest 
+/usr/bin/c++     CMakeFiles/cpptest.dir/7.cpp.o  -o cpptest 
